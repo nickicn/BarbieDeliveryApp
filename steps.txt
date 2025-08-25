@@ -1,0 +1,21 @@
+-- Configuração do GIT
+
+git config --global user.name nickicn
+git config --global user.email nicolelopes0008@gmail.com
+
+npx create-expo-app@latest barbieDelivery
+
+cd barbieDelivery
+npm run reset-project           -> pressione 'n'
+
+-- Criar uma pasta constants
+-- Criar um arquivo Colors.ts na pasta constants
+
+-- Criar uma pasta components
+-- Criar um arquivo CustomHeader.tsx na pasta components -> rnfs
+
+cd barbieDelivery
+npm i
+y
+
+CTRL + ALT + F => Alinha o código
