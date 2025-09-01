@@ -14,8 +14,14 @@ npm run reset-project           -> pressione 'n'
 -- Criar uma pasta components
 -- Criar um arquivo CustomHeader.tsx na pasta components -> rnfs
 
+-- npm i @gorhom/bottom-sheet
+-- npx expo install react-native-reanimated react-native-gesture-handler
+
+-- npx expo customize babel.config.js
+
 cd barbieDelivery
 npm i
 y
+npx expo start --localhost --android
 
-CTRL + ALT + F => Alinha o código
+SHIFT + ALT + F => Alinha o código
