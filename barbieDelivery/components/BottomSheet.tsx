@@ -40,7 +40,7 @@ const BottomSheet = forwardRef<Ref>((props, ref) => {
           </TouchableOpacity>
         </Link>
 
-        <Text style={styles.subheader}>Tempo para chegada</Text>
+        <Text style={styles.subheader}>Tempo para entrega</Text>
         <Link href={'/'} asChild>
           <TouchableOpacity style={styles.item}>
             <Ionicons name="stopwatch-outline" size={20} color={Colors.medium} />
@@ -50,7 +50,7 @@ const BottomSheet = forwardRef<Ref>((props, ref) => {
         </Link>
 
         <TouchableOpacity style={styles.button} onPress={ () => dismiss() }>
-          <Text>Confirmar</Text>
+          <Text style={styles.buttonText}>Confirmar</Text>
         </TouchableOpacity>
       </BottomSheetView>
     </BottomSheetModal>
@@ -61,7 +61,7 @@ export default BottomSheet
 
 const styles = StyleSheet.create({
   contentContainer: {
-    alignItems: 'center',
+  paddingHorizontal: 16,
     height: '100%',
   },
   toggle: {
@@ -78,4 +78,38 @@ const styles = StyleSheet.create({
   toggleActive: {
     backgroundColor: Colors.primary,
   },
-})
+  activeText: {
+    color: '#fff',
+    fontWeight: '700',
+  },
+  toggleInactive: {},
+  inactiveText: {
+    color: Colors.primary,
+  },
+  subheader: {
+    fontSize: 16,
+    fontWeight: '600',
+    marginBottom: 10,
+  },
+  item: {
+    flexDirection: 'row',
+    gap: 8,
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    padding: 16,
+    borderColor: Colors.grey,
+    borderWidth: 1,
+    marginBottom: 16,
+  },
+  button: {
+    backgroundColor: Colors.primary,
+    padding: 12,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  buttonText: {
+    color:'#fff',
+    fontWeight: 'bold',
+  }
+});
